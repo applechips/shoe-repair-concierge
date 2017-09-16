@@ -10,6 +10,18 @@
     color: black;
 }
 
+.ui.image.brochure-back {
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.ui.image.brochure-front {
+    padding-left: 35px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
 .home-page {
     background-image: url(imgs/background-edit.png);
     background-repeat: no-repeat;
@@ -28,6 +40,20 @@
     font-family: 'Abel', sans-serif;
     color: white;
 }
+
+#services {
+    background: #000;
+}
+
+#services .description p {
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 27px;
+    padding: 15px;
+}
+
+/* HEADER */
 
 #header {
     background-color: transparent;
@@ -57,7 +83,7 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 0;
+    top: 1em;
 }
 
 #header nav {
@@ -168,7 +194,7 @@
 
 #header.alt nav {
     right: 2em;
-    top: 2em;
+    top: 1em;
 }
 
 #header.alt nav a {
