@@ -2,24 +2,13 @@
     text-align: center;
 }
 
+/*animation: feature-text-anim .75s ease-in-out;*/
 .App-intro {
     font-size: large;
 }
 
 .ui.header {
     color: black;
-}
-
-.ui.image.brochure-back {
-    padding-right: 35px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-}
-
-.ui.image.brochure-front {
-    padding-left: 35px;
-    padding-top: 5px;
-    padding-bottom: 15px;
 }
 
 .home-page {
@@ -40,7 +29,12 @@
     font-family: 'Abel', sans-serif;
     color: white;
 }
+/* ABOUT */
+.about-description {
+    font-family: 'Crimson Text', serif;
+}
 
+/* SERVICES */
 #services {
     background: #000;
 }
@@ -53,6 +47,21 @@
     padding: 15px;
 }
 
+.services-section {
+    margin-bottom: 15px;
+}
+
+.ui.image.brochure-back {
+    padding-right: 35px;
+    padding-top: 5px;
+    /*-bottom: 15px;*/
+}
+
+.ui.image.brochure-front {
+    padding-left: 35px;
+    padding-top: 5px;
+    /*padding-bottom: 15px;*/
+}
 /* HEADER */
 
 #header {

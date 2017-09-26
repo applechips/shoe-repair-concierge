@@ -40,13 +40,13 @@ class App extends Component {
                         <p>CHINATOWN VANCOUVER LOCATED. BEST PRICES GUARANTEED. ARTISAN STYLE SHOE REPAIR.</p>
                     </div>
                     <div className="brochures">
-                        <Grid>
+                        <Grid stackable columns={2}>
                             <Grid.Row>
                                 <Grid.Column width={8}>
-                                    <Image src={brochureFront} className="brochure-front" />
+                                    <Image src={brochureFront} className="brochure-front"/>
                                 </Grid.Column>
                                 <Grid.Column width={8}>
-                                    <Image src={brochureBack} className="brochure-back" />
+                                    <Image src={brochureBack} className="brochure-back"/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -57,7 +57,14 @@ class App extends Component {
 
                 {/* ABOUT */}
                 <section id="about" className="about-section">
-
+                    <div className="about-description">
+                    <p>Shoe Repair Concierge is an artisan style shoe repair shop located in Chinatown, Vancouver offering the best prices guaranteed.</p>
+                    </div>
+                    <p> Third generation Polish, bespoke shoemaker and cobbler Michal Marcinek, studied in
+                        Florence, Italy at Accademia Riacci which is regarded as one of the worlds most
+                        prestigious artisan shoemaking schools in the world. His experience in shoe repair, orthopedic footwear, boot factory manufacturing and handmade footwear gives him a unique approach
+                        in the west coast footwear industry. All products are made, designed and sourced in
+                        Vancouver, B.C. resulting in functional, aesthetic and quality crafted pieces.</p>
                 </section>
 
                 {/*<section vertical masive className="home-page">*/}
