@@ -2,13 +2,17 @@
     text-align: center;
 }
 
-/*animation: feature-text-anim .75s ease-in-out;*/
 .App-intro {
     font-size: large;
 }
 
 .ui.header {
     color: black;
+}
+
+.ui.image.logo {
+    position: relative;
+    padding: 40px;
 }
 
 .home-page {
@@ -29,9 +33,90 @@
     font-family: 'Abel', sans-serif;
     color: white;
 }
+/* SHOWCASE */
+#showcase .showcase-section {
+    background-color: #000;
+    color: #fff;
+}
+/* CONTACT */
+#icon .social-icons {
+
+    justify-content: center;
+}
 /* ABOUT */
-.about-description {
-    font-family: 'Crimson Text', serif;
+.src-about-section {
+    background-color: #000;
+    color: #fff;
+}
+
+.src-about-section p {
+    font-family: 'EB Garamond', serif;
+}
+
+/* ABOUT */
+#about-desc.about-description {
+    padding-top: 60px;
+}
+
+.ui.image.about-image {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+hr {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#about-desc .about-michal {
+    font-size: 25px;
+}
+
+#about-desc .about-src {
+    font-size: 35px;
+}
+
+
+#about-desc p {
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* SERVICES */
@@ -43,7 +128,7 @@
     color: #fff;
     font-family: 'Abel', sans-serif;
     text-align: center;
-    font-size: 27px;
+    font-size: 40px;
     padding: 15px;
 }
 
@@ -51,17 +136,185 @@
     margin-bottom: 15px;
 }
 
+.ui.grid>.row>.brochure-front-column {
+    padding-left: 3em !important;
+    padding-bottom: 1em;
+}
+
+.ui.grid>.row>.brochure-back-column {
+    padding-right: 3em !important;
+}
 .ui.image.brochure-back {
-    padding-right: 35px;
+    /*padding-right: 35px;*/
     padding-top: 5px;
     /*-bottom: 15px;*/
 }
 
 .ui.image.brochure-front {
-    padding-left: 35px;
+    /*padding-left: 35px;*/
     padding-top: 5px;
     /*padding-bottom: 15px;*/
 }
+
+/* NAV PANEL */
+.navPanelToggle {
+    text-decoration: none;
+    text-decoration: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+.navPanelToggle:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+@media screen and (max-width: 980px) {
+
+    .navPanelToggle {
+        display: block;
+    }
+
+}
+
+.navPanelToggle *:before {
+    background: rgba(144, 144, 144, 0.65);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 2.25em;
+    left: 0.5em;
+    line-height: 2.25em;
+    position: absolute;
+    text-align: center;
+    top: 0.5em;
+    width: 3.5em;
+}
+
+#navPanel {
+    -moz-transform: translateX(-20em);
+    -webkit-transform: translateX(-20em);
+    -ms-transform: translateX(-20em);
+    transform: translateX(-20em);
+    -moz-transition: -moz-transform 0.5s ease, visibility 0.5s;
+    -webkit-transition: -webkit-transform 0.5s ease, visibility 0.5s;
+    -ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
+    transition: transform 0.5s ease, visibility 0.5s;
+    -webkit-overflow-scrolling: touch;
+    visibility: hidden;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #222;
+    color: #fff;
+    height: 100%;
+    max-width: 80%;
+    width: 20em;
+    padding: 0.5em 1.25em;
+    text-transform: uppercase;
+}
+
+#navPanel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navPanel ul li {
+    padding: 0;
+}
+
+#navPanel ul li:first-child a:not(.button), #navPanel ul li:first-child span:not(.button) {
+    border-top: 0;
+}
+
+#navPanel ul li a:not(.button),
+#navPanel ul li span:not(.button) {
+    border-top: solid 1px #555;
+    color: #fff;
+    display: block;
+    padding: 0.75em 0;
+    text-decoration: none;
+}
+
+#navPanel .button {
+    width: 100%;
+}
+
+#navPanel .close {
+    text-decoration: none;
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    border: 0;
+    color: #484848;
+    cursor: pointer;
+    display: block;
+    height: 4em;
+    padding-right: 1.25em;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    vertical-align: middle;
+    width: 5em;
+}
+
+#navPanel .close:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+#navPanel .close:before {
+    content: '\f00d';
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+#navPanel .close:hover {
+    color: inherit;
+}
+
+@media screen and (max-width: 736px) {
+
+    #navPanel .close {
+        height: 4em;
+        line-height: 4em;
+    }
+
+}
+
+#navPanel.visible {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+    visibility: visible;
+}
+
 /* HEADER */
 
 #header {
@@ -234,7 +487,7 @@ body.is-touch #banner {
 }
 
 #banner {
-    padding: 16em 0 13em 0;
+    padding: 0 0 25em 0;
     background-attachment: fixed;
     background-image: url(imgs/background-edit.png);
     background-position: center top;
